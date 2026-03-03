@@ -1750,21 +1750,6 @@ function ValidatorOnSubmit() {
             }
         </script>
 
-    <script src="js/api.js"></script>
-    <script>
-
-        grecaptcha.ready(function () {
-            // do request for recaptcha token
-            // response is promise with passed token
-            grecaptcha.execute('6LcJP4caAAAAAF-yesC09AKsW7icdhSKWPm8g9Hg', { action: 'validate_captcha' })
-                .then(function (token) {
-                    // add token value to form
-                    document.getElementById('HFToken').value = token;
-                }
-                );
-        });
-
-    </script>
 
          <!-- Matomo -->
     <script type="opt-in" data-type="text/javascript" data-name="matomo">
